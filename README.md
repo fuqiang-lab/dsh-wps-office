@@ -41,7 +41,14 @@ upstream skill text and is idempotent.
 From a local checkout (development):
 
 ```sh
-dsh plugin --profile desktop add link:D:/Coding/DSH-Plugin/dsh-wps-office
+dsh plugin --profile desktop add link:D:/Coding/dsh-wps-office
+```
+
+From GitHub (pnpm installs the declared dependencies, the built server is
+committed under `vendor/`):
+
+```sh
+dsh plugin --profile desktop add github:fuqiang-lab/dsh-wps-office
 ```
 
 From npm (once published), or through a custom plugin index:

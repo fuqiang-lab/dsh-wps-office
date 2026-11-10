@@ -1,0 +1,53 @@
+{
+  "name": "dsh-wps-office",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness bundle: drives the WPS Office MCP server through five compact facade tools and ships the four WPS skills (Excel/Word/PPT/general).",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuqiang-lab/dsh-wps-office.git"
+  },
+  "homepage": "https://github.com/fuqiang-lab/dsh-wps-office#readme",
+  "bugs": {
+    "url": "https://github.com/fuqiang-lab/dsh-wps-office/issues"
+  },
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skill",
+    "vendor",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "wps",
+    "wps-office",
+    "mcp"
+  ]
+}

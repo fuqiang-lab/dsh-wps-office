@@ -1,0 +1,22 @@
+# dsh-wps-office bundle layer.
+#
+# Inserts one plugin row that:
+#   - registers five model-facing tools (wps_excel / wps_word / wps_ppt /
+#     wps_office / wps_help) which forward `{ method, args }` to the vendored
+#     WPS Office MCP server over stdio;
+#   - registers the four embedded WPS skills (wps-excel / wps-word / wps-ppt /
+#     wps-office) per agent, so they shadow a same-named filesystem skill.
+#
+# The row keeps the 250 underlying MCP tools out of the model context; the
+# model discovers methods through wps_help on demand.
+- insert:
+    - id: wps-office
+      name: dsh-wps-office
+      config:
+        enabled: true
+        # Spawn the MCP server at plugin activation instead of on first call.
+        eagerConnect: true
+        # Prepend a short facade-convention header to each embedded skill body.
+        skillNote: true
+        connectTimeoutMs: 20000
+        requestTimeoutMs: 120000

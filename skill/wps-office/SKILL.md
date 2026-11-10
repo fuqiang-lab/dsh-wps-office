@@ -300,7 +300,7 @@ ELSE:
 | `wps_office({ method: "common_get_selected_text" })` | 获取当前文档中选中的文本内容 |
 | `wps_office({ method: "common_set_selected_text" })` | 替换当前文档中选中的文本内容 |
 
-### Excel 专项工具（80个，详见 /wps-excel Skill）
+### Excel 专项工具（82个，详见 /wps-excel Skill）
 
 | 分类 | 工具数 | 关键工具 |
 |-----|-------|---------|
@@ -315,7 +315,7 @@ ELSE:
 | 行列 | 8 | insert/delete_rows/columns, hide/show_rows/columns, group_rows |
 | 批注保护 | 7 | delete_cell_comment, get_cell_comments, unprotect_sheet, lock_cells, set_array_formula, insert_excel_image, set_hyperlink |
 
-### Word 专项工具（24个，详见 /wps-word Skill）
+### Word 专项工具（28个，详见 /wps-word Skill）
 
 | 分类 | 工具数 | 关键工具 |
 |-----|-------|---------|
@@ -323,7 +323,7 @@ ELSE:
 | 内容 | 10 | insert_text, find_replace, insert_table/image/comment/page_break/bookmark/section_break, set_paragraph, set_page_setup |
 | 文档管理 | 9 | get_active/open_documents, switch/open_document, get_document_text, insert_header/footer, generate_toc/doc_toc |
 
-### PPT 专项工具（111个，详见 /wps-ppt Skill）
+### PPT 专项工具（114个，详见 /wps-ppt Skill）
 
 | 分类 | 工具数 | 关键工具 |
 |-----|-------|---------|
@@ -346,9 +346,9 @@ ELSE:
 
 | 工具前缀 | 对应 Skill |
 |---------|-----------|
-| `wps_office` | /wps-excel（80个工具） |
-| `wps_office` | /wps-word（24个工具） |
-| `wps_office` | /wps-ppt（111个工具） |
+| `wps_office` | /wps-excel（82个工具） |
+| `wps_office` | /wps-word（28个工具） |
+| `wps_office` | /wps-ppt（114个工具） |
 | `wps_office` / `wps_office` | 通用（9个工具） |
 
 ## 使用建议

@@ -202,7 +202,7 @@ description: WPS 表格智能助手，通过自然语言操控 Excel，解决公
 
 ## 可用MCP工具
 
-本Skill通过以下已注册MCP工具与WPS Office交互（共80个）：
+本Skill通过以下已注册MCP工具与WPS Office交互（共82个）：
 
 ### 工作簿管理工具（10个）
 

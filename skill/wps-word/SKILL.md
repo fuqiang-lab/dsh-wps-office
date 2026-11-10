@@ -64,7 +64,7 @@ description: WPS 文字智能助手，通过自然语言操控 Word 文档，解
 
 ### Step 4: 执行操作
 
-调用相应MCP工具完成操作（共24个已注册工具）：
+调用相应MCP工具完成操作（共28个已注册工具）：
 
 **文档管理：**
 - `wps_word({ method: "get_open_documents" })`：获取打开的文档列表
@@ -264,7 +264,7 @@ description: WPS 文字智能助手，通过自然语言操控 Word 文档，解
 
 ## 可用MCP工具
 
-本Skill通过以下MCP工具与WPS Office交互（共24个已注册工具）：
+本Skill通过以下MCP工具与WPS Office交互（共28个已注册工具）：
 
 ### 格式化工具（5个）
 
